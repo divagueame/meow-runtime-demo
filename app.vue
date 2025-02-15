@@ -1,10 +1,12 @@
 <template>
   <div>
-    <pre>{{config}}</pre>
+    <NuxtPage />
   </div>
 </template>
 <script setup lang="ts">
-const config = useRuntimeConfig()
-
-const meow = config.public.meow;
+useHead({
+  link: [
+    { rel: "stylesheet", href: "https://cdn.simplecss.org/simple.css" }
+  ]
+});
 </script>
