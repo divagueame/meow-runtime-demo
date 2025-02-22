@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // Reference for '/css-in-components/2-shared-css-a'
+  // features: {
+  //   inlineStyles: false,
+  // },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   // vite: {

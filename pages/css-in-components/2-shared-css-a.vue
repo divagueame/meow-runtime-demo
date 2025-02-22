@@ -14,6 +14,15 @@
 
     <NuxtLink class="shared-class" to="/css-in-components/2-shared-css-b" no-prefetch>Here it's the other page with the same css class</NuxtLink>
 
+
+    This duplication of css has been discussed in this <a href="https://github.com/nuxt/nuxt/issues/21821">here</a>. It's possible to remove this Nuxt feature by adding this to nuxt.config:
+<code>
+export default defineNuxtConfig({
+  features: {
+    inlineStyles: false,
+  },
+...
+</code>
   </div>
 </template>
 
