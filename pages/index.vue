@@ -14,8 +14,13 @@
 
     <p>To see how Nuxt will bundle your application files:</p>
     <code>npx nuxi analyze</code>
+    <h1>{{config}}</h1>
     <p>
       http://localhost:3000/client
     </p>
   </div>
 </template>
+<script setup lang="ts">
+
+const config = useRuntimeConfig()
+</script>
